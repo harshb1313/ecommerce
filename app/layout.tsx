@@ -1,6 +1,6 @@
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
-import Navbar from "@/components/Navbar";
+import NavbarWrapper from "@/components/NavbarWrapper";
 
 export const metadata = {
   title: "ShopEase",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <CartProvider>
-          <Navbar />
+          <NavbarWrapper/>
           <main>{children}</main>
         </CartProvider>
       </body>
